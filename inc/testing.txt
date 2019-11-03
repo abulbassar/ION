@@ -1,0 +1,62 @@
+/*
+function icon($icon){
+	$atts=shortcode_atts(
+		array(
+		'icon_icon'			=>'',
+		'icon_icon_heading' 	=>'',
+		'icon_icon_desc'		=>'',
+		),$icon
+	);
+	ob_start();
+	
+?>
+	
+		<div class="container">
+			<div class="row">
+				<div class="4u">
+					<section class="special box">
+						<i class="icon <?php echo esc_attr($atts['icon_icon']);?>"></i>
+						<h3><?php echo esc_attr($atts['icon_icon_heading']);?></h3>
+						<p><?php echo esc_attr($atts['icon_icon_desc']);?></p>
+					</section>
+				</div>
+			
+			</div>
+		</div>
+	
+	
+	
+
+<?php 
+return ob_get_clean();
+}
+
+add_shortcode('icons','icon');
+
+// section heading
+
+function sec_head_fun($sec_head_fun){
+	$atts=shortcode_atts(
+		array(
+		'icon_sec_heading'			=>'',
+		'icon_sec_desc' 	=>'',
+		),$sec_head_fun
+	);
+	ob_start();
+	
+?>				
+			
+				<header class="major">
+					<h2><?php echo esc_attr($atts['icon_sec_heading']);?></h2>
+					<p><?php echo esc_attr($atts['icon_sec_desc']);?></p>
+				</header>
+	
+				
+
+<?php 
+return ob_get_clean();
+}
+
+add_shortcode('section_heading','sec_head_fun');
+
+*/
